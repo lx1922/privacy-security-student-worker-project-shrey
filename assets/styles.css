@@ -14,3 +14,198 @@
 }
 
 /* Put CSS Styles Here */
+body {
+    background-image: url("img/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    /* position:absolute; */
+    width: 100%;
+}
+
+.logo-container {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: #233647;
+    padding: 20px;
+}
+
+.navbar {
+    float: right;
+    width: 50%;
+    text-align: right;
+    font-family: font-metropolis;
+}
+
+.navbar li {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
+.navbar li a{
+    color: white;   
+    text-decoration: none;
+    background-image: var(--navGradient);
+    background-position: 50% 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    padding-bottom: 3px;
+}
+
+.navbar li a:hover{
+    background-size: 100% 2px;
+}
+
+#circle {
+    font-size: 40px;
+}
+#squares {
+    font-size: 20px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+    background-color: #233647;
+    padding: 30px;
+    right: 0;
+    left: 0;
+}
+
+#footer .logo {
+    width: 30%;
+}
+
+#footer .logo-container {
+    width: 25%;
+}
+
+#footer .navbar li {
+    padding-left: 45px;
+}
+
+#github {
+    font-size: 25px;
+}
+
+#main-container {
+    width: 75%;
+    margin: 10% auto 10% auto;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+}
+
+#span-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#manage {
+    font-size: 25px;
+}
+
+#remaining {
+    align-self: flex-end;   
+}
+
+#alias-button {
+    width: 20%;
+    position: relative;
+    margin: 10px 5px auto auto;
+    float: right; 
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0066ff;
+    color: white;
+    font-size: 15px;
+}
+
+#email-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    color: grey;
+    font-size: 15px;
+}
+
+#following {
+    align-self: center;
+}
+
+#toggle {
+    font-size: 25px;
+    color: #0066ff;
+}
+
+#main-relay {
+    background-color: white;
+    box-shadow: 3px 3px 3px 3px grey;
+}
+
+#relay-container {
+    padding: 5px;
+    font-weight: bold;
+}
+
+#label-container {
+    padding: 5px;
+}
+
+#left-container {
+    float: left;
+    font-size: 20px;
+}
+
+#right-container {
+    float: right;
+}
+
+#right-container span {
+    padding-left: 45px;
+    padding-right: 65px;
+    font-size: 25px;
+}
+
+#label-container{
+    margin-top: 20px;
+    position: relative;
+}
+
+#label-left-box {
+    font-size: 10px;
+    float: left;
+}
+
+span a {
+    text-decoration: none;
+    color: grey;
+}
+
+#label-right-box {
+    font-size: 10px;
+    float: right;
+}
+
+#label-right-box span {
+    padding-left: 45px;
+}
+
+#msg {
+    margin: 15px;
+}

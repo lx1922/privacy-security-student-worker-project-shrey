@@ -9,11 +9,80 @@
     <link rel="shortcut icon" href="https://www.mozilla.org/media/img/favicons/mozilla/favicon.d25d81d39065.ico">
     <link rel="stylesheet" href="assets/fonts.css">
     <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/app.js"></script>
 </head>
 
 <body>
     <!-- Put HTML Here -->
+    <header>
+        <div class="logo-container">
+            <img src="assets/img/logo-relay.png" class="logo">
+        </div>
+        <div class="navbar">
+            <ul>
+                <li class="links"><a href='#Home' class="font-metropolis">Home</a></li>
+                <li class="links"><a href='#FAQ' class="font-metropolis">FAQ</a></li>
+                <li class="links"><a href='#' id="squares"><i class="fas fa-th"></i></a></li>
+                <li class="links"><a href='#' id="circle"><i class="fas fa-circle"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="main-container">
+        <div>
+            <div id="span-container">
+                <span id="manage" class="font-metropolis">Manage your Relay aliases</span>
+                <span id="remaining" class="font-inter">{number} remaining aliases</span>
+            </div>
+            <hr />
+            <input type="submit" value="+ Generate New Alias" class="font-metropolis" id="alias-button">
+            <!-- <i class="fas fa-plus"></i> -->
+        </div>
+        <div id="email-container">
+            <span id="add-acct" class="font-inter">Add account name  <i class="fas fa-pencil-alt"></i></span>
+            <span id="following" class="font-inter">forwarding  <i class="fas fa-toggle-on" id="toggle"></i></span>
+        </div>
+        <div id="main-relay">
+            <div id="relay-container">
+                <div id="left-container">
+                    <span class="font-inter">{email address} </span>
+                </div>
+                <div id="right-container">
+                    <span class="font-inter">0</span>
+                    <span class="font-inter">0</span>
+                </div>
+            </div>
+            <div id="label-container">
+                <div id="label-left-box">
+                    <span><a href="#" onclick="toggle()">Show Details</a></span>
+                </div>
+                <div id="label-right-box">
+                    <span class="font-inter">Blocked</span>
+                    <span class="font-inter">Forwarded</span>
+                </div>
+            </div>
+            <div id="hidden-container">
+                Hi, sorry couldnt complete the full project!
+            </div>
+        </div>
+        <div id="msg">
+            <span class="font-inter">Firefox Relay supports email forwarding (including attachments) of email up to 150KB in size</span>
+        </div>
+    </div>
     
+
+    <footer id="footer">
+        <div class="logo-container">
+            <img src="assets/img/logo-mozilla.svg" class="logo">
+        </div>
+        <div class="navbar">
+            <ul>
+                <li class="links"><a href='#Privacy' class="font-metropolis">Privacy</a></li>
+                <li class="links"><a href='#Relay Terms' class="font-metropolis">Relay Terms</a></li>
+                <li class="links"><a href='#Legal' class="font-metropolis">Legal</a></li>
+                <li class="links"><a href='#' id="github"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+    </footer>
     <!-- 
         Font Awesome v5 Free - See https://fontawesome.com/start for more info
         Example usage: <i class="fas fa-toggle-off"></i>
